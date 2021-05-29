@@ -3,7 +3,7 @@ module.exports = {
   title: 'EE-214 (WEL)',
   tagline: 'Dinosaurs are cool',
   url: 'https://saurabh8r.github.io',
-  baseUrl: '/',
+  baseUrl: '/my-website-test/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
