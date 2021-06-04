@@ -24,10 +24,18 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-.xcontainer {
+.video-container {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 35px;
+  height: 0;
+  overflow: hidden;
+}
+
+.pdf-container {
+  position: relative;
+  padding-bottom: 130%;
+  /* padding-top: 35px; */
   height: 0;
   overflow: hidden;
 }
@@ -40,3 +48,4 @@
   width: 100%;
   height: 100%;
 }
+

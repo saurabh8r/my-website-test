@@ -18,14 +18,33 @@ module.exports = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
+          
           position: 'left',
-          label: 'Lab Handouts',
+          label: 'Lab Hanadouts',
+          type: 'doc',
+          docId: 'lab-handouts/exp0w',
+        },
+        {
+          position: 'left',
+          label: 'Software Installation',
+          items:[
+            {
+              type: 'doc',
+              docId: 'Installation',
+              label: 'Windows',
+              to: 'docs/windows/installation',
+            },
+            {
+              type: 'doc',
+              docId: 'Installation',
+              label: 'Linux',
+              to: 'docs/linux/installation',
+            },
+          ]
         },
         {to: '/blog', label: 'Announcements', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/',
           label: 'GitHub',
           position: 'right',
         },
@@ -48,15 +67,15 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://stackoverflow.com/',
             },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discordapp.com/',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/',
             },
           ],
         },
@@ -69,29 +88,32 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with 🤯.`,
     },
   },
   presets: [
     [
       '@docusaurus/preset-classic',
       {
+        debug: true, // force debug plugin usage
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          path: 'docs',
+          sidebarPath: 'sidebars.js',
+          // sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          // editUrl:
+          //   'https://github.com/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
